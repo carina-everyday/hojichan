@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoji-Chan | Bubbly Roasted Green Tea</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF5F7;
+            color: #555;
+        }
+        .header-font {
+            font-family: 'Dancing Script', cursive;
+            text-shadow: 2px 2px #FFDDE2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="header-font text-5xl font-bold text-[#FF6384]">
+                Hoji-Chan
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-[#FF6384] hover:text-[#FF9AB1] font-semibold transition-colors duration-200">About</a>
+                <a href="#drinks" class="text-[#FF6384] hover:text-[#FF9AB1] font-semibold transition-colors duration-200">Our Drinks</a>
+                <a href="#find-us" class="text-[#FF6384] hover:text-[#FF9AB1] font-semibold transition-colors duration-200">Find Us</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-[#FF6384] focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-white text-center shadow-md">
+            <a href="#about" class="block py-3 text-[#FF6384] hover:bg-[#FFF5F7] font-semibold transition-colors duration-200">About</a>
+            <a href="#drinks" class="block py-3 text-[#FF6384] hover:bg-[#FFF5F7] font-semibold transition-colors duration-200">Our Drinks</a>
+            <a href="#find-us" class="block py-3 text-[#FF6384] hover:bg-[#FFF5F7] font-semibold transition-colors duration-200">Find Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-[#FF9AB1] py-20 md:py-40 text-white text-center">
+            <div class="container mx-auto px-4">
+                <h1 class="header-font text-5xl md:text-8xl font-extrabold mb-4 drop-shadow-lg">
+                    Hoji-Chan
+                </h1>
+                <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-8 font-light">
+                    The bubbly, roasted green tea that’s as cute as it is delicious.
+                </p>
+                <a href="#drinks" class="inline-block bg-[#FF6384] text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-[#FF809B] transition-colors duration-300">
+                    Explore Our Drinks
+                </a>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-[#FFF5F7]">
+            <div class="container mx-auto px-4">
+                <div class="md:flex md:items-center md:space-x-12">
+                    <div class="md:w-1/2 mb-8 md:mb-0">
+                        <img src="https://placehold.co/800x600/FFDDE2/FF6384?text=Hoji-Chan+Brewery" alt="Hoji-Chan brewing process" class="rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="header-font text-5xl font-bold text-[#FF6384] mb-4">Our Story</h2>
+                        <p class="text-lg mb-4 leading-relaxed text-gray-700">
+                            Hoji-Chan was born from a simple idea: to take the warm, roasted comfort of Japanese hojicha and infuse it with a joyful, refreshing sparkle. We take premium hojicha, carefully steep it to perfection, and then lightly carbonate it to create a drink that's both familiar and delightfully new.
+                        </p>
+                        <p class="text-lg leading-relaxed text-gray-700">
+                            Inspired by the vibrant and innovative spirit of the San Francisco Bay Area, Hoji-Chan is a celebration of tradition meeting modernity. We're proud to bring this unique, low-caffeine beverage to our local community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Drinks Section -->
+        <section id="drinks" class="py-16 md:py-24 bg-[#FFDDE2]">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="header-font text-5xl font-bold text-[#FF6384] mb-12">Our Delicious Drinks</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Drink 1 - The Classic -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-full h-auto rounded-xl mb-4" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <title>Classic Hoji-Chan</title>
+                            <defs>
+                                <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#FFDDE2" />
+                                    <stop offset="100%" stop-color="#FFF5F7" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="0" y="0" width="400" height="400" fill="#FFDDE2" rx="20" ry="20" />
+                            <path d="M100 100 Q 200 50 300 100 V 300 Q 200 350 100 300 Z" fill="#EAE0DA" />
+                            <circle cx="200" cy="200" r="80" fill="#FFC0CB" />
+                            <circle cx="200" cy="200" r="70" fill="url(#bubbleGradient)" />
+                            <circle cx="160" cy="180" r="15" fill="white" opacity="0.6" />
+                            <circle cx="240" cy="220" r="10" fill="white" opacity="0.6" />
+                            <path d="M150 250 Q 200 280 250 250" stroke="#FF6384" stroke-width="3" fill="none"/>
+                            <path d="M150 250 A 10 10 0 0 1 150 250.1" fill="none"/>
+                            <path d="M150 250 Q 170 270 200 270 Q 230 270 250 250" stroke="#FF6384" stroke-width="2" fill="none"/>
+                            <circle cx="170" cy="250" r="2" fill="#FF6384" />
+                            <circle cx="230" cy="250" r="2" fill="#FF6384" />
+                        </svg>
+                        <h3 class="header-font text-3xl font-bold text-[#FF6384] mb-2">The Classic</h3>
+                        <p class="text-gray-600 mb-4">
+                            The original and beloved Hoji-Chan. Pure, nutty, and roasted notes with a crisp, clean finish. The perfect introduction to our brand.
+                        </p>
+                    </div>
+                    <!-- Drink 2 - Yuzu-Ginger -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-full h-auto rounded-xl mb-4" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <title>Yuzu Ginger Hoji-Chan</title>
+                            <rect x="0" y="0" width="400" height="400" fill="#FFDDE2" rx="20" ry="20" />
+                            <path d="M100 100 Q 200 50 300 100 V 300 Q 200 350 100 300 Z" fill="#EAE0DA" />
+                            <circle cx="200" cy="200" r="80" fill="#FFEB99" />
+                            <circle cx="200" cy="200" r="70" fill="#FFEDC4" />
+                            <circle cx="160" cy="180" r="15" fill="white" opacity="0.6" />
+                            <circle cx="240" cy="220" r="10" fill="white" opacity="0.6" />
+                            <circle cx="180" cy="240" r="5" fill="#FF6384" />
+                            <path d="M150 250 Q 200 280 250 250" stroke="#FF6384" stroke-width="3" fill="none"/>
+                            <path d="M150 250 Q 170 270 200 270 Q 230 270 250 250" stroke="#FF6384" stroke-width="2" fill="none"/>
+                            <rect x="195" y="160" width="10" height="20" fill="#C56A00" rx="5" ry="5" />
+                            <circle cx="220" cy="170" r="8" fill="#FFD700" />
+                            <circle cx="230" cy="190" r="6" fill="#FFD700" />
+                        </svg>
+                        <h3 class="header-font text-3xl font-bold text-[#FF6384] mb-2">Yuzu-Ginger</h3>
+                        <p class="text-gray-600 mb-4">
+                            A zesty and invigorating blend of bright yuzu citrus and a hint of warm ginger. A delightful and sophisticated sparkle.
+                        </p>
+                    </div>
+                    <!-- Drink 3 - Blackberry-Mint -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
+                        <svg class="w-full h-auto rounded-xl mb-4" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <title>Blackberry Mint Hoji-Chan</title>
+                            <rect x="0" y="0" width="400" height="400" fill="#FFDDE2" rx="20" ry="20" />
+                            <path d="M100 100 Q 200 50 300 100 V 300 Q 200 350 100 300 Z" fill="#EAE0DA" />
+                            <circle cx="200" cy="200" r="80" fill="#CC8899" />
+                            <circle cx="200" cy="200" r="70" fill="#F0C0C8" />
+                            <circle cx="160" cy="180" r="15" fill="white" opacity="0.6" />
+                            <circle cx="240" cy="220" r="10" fill="white" opacity="0.6" />
+                            <path d="M150 250 Q 200 280 250 250" stroke="#FF6384" stroke-width="3" fill="none"/>
+                            <path d="M150 250 Q 170 270 200 270 Q 230 270 250 250" stroke="#FF6384" stroke-width="2" fill="none"/>
+                            <circle cx="160" cy="150" r="12" fill="#5E2C4A" />
+                            <circle cx="175" cy="170" r="10" fill="#5E2C4A" />
+                            <circle cx="220" cy="160" r="10" fill="#A4D49A" />
+                            <path d="M220 160 Q 210 130 200 140" stroke="#A4D49A" stroke-width="5" fill="none" stroke-linecap="round"/>
+                        </svg>
+                        <h3 class="header-font text-3xl font-bold text-[#FF6384] mb-2">Blackberry-Mint</h3>
+                        <p class="text-gray-600 mb-4">
+                            A refreshing and fruity concoction. The sweet, juicy notes of blackberry meet the cool, crisp finish of fresh mint.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Find Us Section -->
+        <section id="find-us" class="py-16 md:py-24 bg-[#FFF5F7]">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="header-font text-5xl font-bold text-[#FF6384] mb-4">Find Hoji-Chan Near You</h2>
+                <p class="text-lg max-w-2xl mx-auto mb-8 text-gray-700">
+                    We are currently available in select cafes, markets, and restaurants across the San Francisco Bay Area. Stay tuned for an updated map!
+                </p>
+                <div class="w-full h-80 bg-[#FFDDE2] rounded-2xl shadow-lg flex items-center justify-center text-[#FF6384] font-semibold mb-8">
+                    <!-- Placeholder for a map -->
+                    [ Map Placeholder ]
+                </div>
+                <p class="text-lg mb-8 text-gray-700">
+                    Can't find us? Let us know where you'd like to see Hoji-Chan next!
+                </p>
+
+                <!-- Contact Form -->
+                <div class="max-w-xl mx-auto">
+                    <form id="contact-form" class="bg-white p-8 rounded-2xl shadow-lg">
+                        <input type="email" placeholder="Enter your email" class="w-full p-4 mb-4 rounded-xl border border-[#FFDDE2] focus:outline-none focus:ring-2 focus:ring-[#FF9AB1]">
+                        <textarea placeholder="Your message..." rows="4" class="w-full p-4 mb-4 rounded-xl border border-[#FFDDE2] focus:outline-none focus:ring-2 focus:ring-[#FF9AB1]"></textarea>
+                        <button type="submit" class="w-full bg-[#FF6384] text-white font-bold py-4 rounded-xl hover:bg-[#FF809B] transition-colors duration-300 shadow-md">
+                            Send Message
+                        </button>
+                        <p id="form-message" class="mt-4 hidden text-[#FF6384] font-semibold">Thanks for your message! We'll be in touch soon.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 text-center text-gray-600 text-sm">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Hoji-Chan. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-4 text-[#FF6384]">
+                <!-- Social media links -->
+                <a href="#" class="hover:text-[#FF9AB1]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07c3.252.148 4.772 1.915 4.904 4.706.059 1.266.071 1.646.071 4.85s-.012 3.584-.07 4.85c-.148 3.252-1.915 4.772-4.706 4.904-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.772-1.915-4.904-4.706-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148-3.252 1.915-4.772 4.706-4.904 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.201-6.78 2.623-6.981 6.981-.058 1.28-.072 1.688-.072 4.947 0 3.259.014 3.668.072 4.948.201 4.358 2.623 6.78 6.981 6.981 1.28.058 1.688.072 4.947.072 3.259 0 3.668-.014 4.948-.072 4.358-.201 6.78-2.623 6.981-6.981.058-1.28.072-1.689.072-4.948 0-3.259-.014-3.667-.072-4.947-.201-4.358-2.623-6.78-6.981-6.981-1.28-.058-1.688-.072-4.947-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                <a href="#" class="hover:text-[#FF9AB1]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                <a href="#" class="hover:text-[#FF9AB1]"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.611 0-1.109-.496-1.109-1.107 0-.611.498-1.109 1.109-1.109s1.109.498 1.109 1.109c0 .611-.498 1.107-1.109 1.107zm8 6.891h-2v-3.493c0-.811-.014-1.859-1.13-1.859-1.131 0-1.305.88-1.305 1.801v3.551h-2v-6h1.999v.842h.023c.277-.591 1.002-.962 1.961-.962 2.103 0 2.493 1.303 2.493 2.965v4.249z"/></svg></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Form submission handler
+            const contactForm = document.getElementById('contact-form');
+            const formMessage = document.getElementById('form-message');
+
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault(); // Prevent actual form submission
+
+                // In a real application, you would handle data submission here
+                // For this example, we just show a success message
+                formMessage.classList.remove('hidden');
+                contactForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
